@@ -1,0 +1,8 @@
+<div *ngIf="hero">
+  <!-- *ngIf - csak akkor jelenik meg ez a html, ha a hero nem null -->
+  <h2>{{hero.name}} details!</h2>
+  <div><label>id: </label>{{hero.id}}</div>
+  <div><label>name: </label><input [(ngModel)]="hero.name" placeholder="name"></div>
+  <button (click)="save()">Save</button>
+  <button (click)="goBack()">Back</button>
+</div>
